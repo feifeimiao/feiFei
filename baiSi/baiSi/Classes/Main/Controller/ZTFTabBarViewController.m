@@ -36,31 +36,35 @@
 {
     ZTFEssenceViewController *es = [[ZTFEssenceViewController alloc]init];
     
-    [self addOneChildView:es];
+    [self addOneChildView:es image:[UIImage imageNamed:@"tabBar_essence_icon"] selImage:[UIImage imageNamed:@"tabBar_essence_click_icon"] name:@"精华"];
     
     
     ZTFNewViewController *new = [[ZTFNewViewController alloc]init];
-    
-    [self addOneChildView:new];
+    [self addOneChildView:new image:[UIImage imageNamed:@"tabBar_friendTrends_icon"] selImage:[UIImage imageNamed:@"tabBar_friendTrends_click_icon"] name: @"新的"];
     
     ZTFPublicViewController *pub = [[ZTFPublicViewController alloc]init];
-    [self addOneChildView:pub];
+     
+     [self addChildViewController:pub];
+    pub.tabBarItem.enabled = NO;
     
     ZTFFriendTrendViewController *frind = [[ZTFFriendTrendViewController alloc]init];
-    [self addOneChildView:frind];
+    [self addOneChildView:frind image:[UIImage imageNamed:@"tabBar_friendTrends_icon"] selImage:[UIImage imageNamed:@"tabBar_friendTrends_click_icon"] name:@"关注"];
     
     ZTFMyViewController *my = [[ZTFMyViewController alloc]init];
-    [self addOneChildView:my];
+      [self addOneChildView:my image:[UIImage imageNamed:@"tabBar_me_icon"] selImage:[UIImage imageNamed:@"tabBar_me_click_icon"] name:@"个人"];
     
 }
 
-- (void) addOneChildView:(UIViewController *)vc
+- (void) addOneChildView:(UIViewController *)vc image:(UIImage *)image selImage:(UIImage *)selImage name:(NSString *)name
 {
     ZTFNaviViewController *nvc = [[ZTFNaviViewController alloc]initWithRootViewController:vc];
     
     
-    nvc.tabBarItem.title = @"sdf";
-
+    nvc.tabBarItem.title = name;
+    nvc.tabBarItem.image = image;
+    
+    nvc.tabBarItem.selectedImage = selImage;
+    
     [self addChildViewController:nvc];
     
     
