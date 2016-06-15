@@ -1,0 +1,29 @@
+//
+//  PrefixHeader.pch
+//  baiSi
+//
+//  Created by feifei on 16/6/15.
+//  Copyright © 2016年 赵腾飞. All rights reserved.
+//
+
+
+#ifdef __OBJC__
+
+#define ZTFScreenW [UIScreen mainScreen].bounds.size.width
+#define ZTFScreenH [UIScreen mainScreen].bounds.size.height
+
+//#import "UIBarButtonItem+Item.h"
+//#import "UIView+Frame.h"
+
+#define ZTFFunc  NSLog(@"%s",__func__);
+
+// 自定义LOG
+#ifdef DEBUG // 调试
+#define ZTFLog(...) NSLog(__VA_ARGS__)
+
+#else // 发布
+#define ZTFLog(...)
+#endif
+
+#endif
+

@@ -24,11 +24,31 @@
 
 @implementation ZTFTabBarViewController
 
+- 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
 
     [self addAllChildViewController];
+    
+    [self addBut];
+    
+}
+
+-(void)addBut
+{
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    
+    [btn setImage:[UIImage imageNamed:@"tabBar_publish_icon"] forState:UIControlStateNormal];
+    
+    [btn setImage:[UIImage imageNamed:@"tabBar_publish_click_icon"] forState:UIControlStateSelected];
+    
+    [btn sizeToFit];
+    
+    btn.center = CGPointMake(ZTFScreenW * 0.5, self.tabBar.frame.size.height * 0.5);
+    
+    [self.tabBar addSubview:btn];
     
 }
 
