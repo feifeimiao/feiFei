@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FE35C4C21D10DFE3008F83FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE35C4C11D10DFE3008F83FD /* main.m */; };
+		FE35C4C51D10DFE3008F83FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE35C4C41D10DFE3008F83FD /* AppDelegate.m */; };
+		FE35C4CD1D10DFE3008F83FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE35C4CC1D10DFE3008F83FD /* Assets.xcassets */; };
+		FE35C4D01D10DFE3008F83FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE35C4CE1D10DFE3008F83FD /* LaunchScreen.storyboard */; };
+		FE35C4EF1D10EF6F008F83FD /* ZTFTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE35C4EE1D10EF6F008F83FD /* ZTFTabBarViewController.m */; };
+		FE35C4F51D110756008F83FD /* ZTFEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE35C4F41D110756008F83FD /* ZTFEssenceViewController.m */; };
+		FE35C4F81D1107D7008F83FD /* ZTFFriendTrendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE35C4F71D1107D7008F83FD /* ZTFFriendTrendViewController.m */; };
+		FE35C4FB1D1107E6008F83FD /* ZTFMyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE35C4FA1D1107E6008F83FD /* ZTFMyViewController.m */; };
+		FE35C4FE1D1107F0008F83FD /* ZTFNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE35C4FD1D1107F0008F83FD /* ZTFNewViewController.m */; };
+		FE35C5011D110803008F83FD /* ZTFPublicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE35C5001D110803008F83FD /* ZTFPublicViewController.m */; };
+		FE35C5041D112AA2008F83FD /* ZTFNaviViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE35C5031D112AA2008F83FD /* ZTFNaviViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FE35C4BD1D10DFE3008F83FD /* baiSi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = baiSi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE35C4C11D10DFE3008F83FD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FE35C4C31D10DFE3008F83FD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FE35C4C41D10DFE3008F83FD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FE35C4CC1D10DFE3008F83FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FE35C4CF1D10DFE3008F83FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FE35C4D11D10DFE3008F83FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE35C4ED1D10EF6F008F83FD /* ZTFTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTFTabBarViewController.h; sourceTree = "<group>"; };
+		FE35C4EE1D10EF6F008F83FD /* ZTFTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTFTabBarViewController.m; sourceTree = "<group>"; };
+		FE35C4F31D110756008F83FD /* ZTFEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTFEssenceViewController.h; sourceTree = "<group>"; };
+		FE35C4F41D110756008F83FD /* ZTFEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTFEssenceViewController.m; sourceTree = "<group>"; };
+		FE35C4F61D1107D7008F83FD /* ZTFFriendTrendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTFFriendTrendViewController.h; sourceTree = "<group>"; };
+		FE35C4F71D1107D7008F83FD /* ZTFFriendTrendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTFFriendTrendViewController.m; sourceTree = "<group>"; };
+		FE35C4F91D1107E6008F83FD /* ZTFMyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTFMyViewController.h; sourceTree = "<group>"; };
+		FE35C4FA1D1107E6008F83FD /* ZTFMyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTFMyViewController.m; sourceTree = "<group>"; };
+		FE35C4FC1D1107F0008F83FD /* ZTFNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTFNewViewController.h; sourceTree = "<group>"; };
+		FE35C4FD1D1107F0008F83FD /* ZTFNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTFNewViewController.m; sourceTree = "<group>"; };
+		FE35C4FF1D110803008F83FD /* ZTFPublicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTFPublicViewController.h; sourceTree = "<group>"; };
+		FE35C5001D110803008F83FD /* ZTFPublicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTFPublicViewController.m; sourceTree = "<group>"; };
+		FE35C5021D112AA2008F83FD /* ZTFNaviViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTFNaviViewController.h; sourceTree = "<group>"; };
+		FE35C5031D112AA2008F83FD /* ZTFNaviViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTFNaviViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE35C4BA1D10DFE3008F83FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FE35C4B41D10DFE3008F83FD = {
+			isa = PBXGroup;
+			children = (
+				FE35C4BF1D10DFE3008F83FD /* baiSi */,
+				FE35C4BE1D10DFE3008F83FD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FE35C4BE1D10DFE3008F83FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE35C4BD1D10DFE3008F83FD /* baiSi.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE35C4BF1D10DFE3008F83FD /* baiSi */ = {
+			isa = PBXGroup;
+			children = (
+				FE35C4D71D10EF45008F83FD /* Classes */,
+				FE35C4C31D10DFE3008F83FD /* AppDelegate.h */,
+				FE35C4C41D10DFE3008F83FD /* AppDelegate.m */,
+				FE35C4CC1D10DFE3008F83FD /* Assets.xcassets */,
+				FE35C4CE1D10DFE3008F83FD /* LaunchScreen.storyboard */,
+				FE35C4D11D10DFE3008F83FD /* Info.plist */,
+				FE35C4C01D10DFE3008F83FD /* Supporting Files */,
+			);
+			path = baiSi;
+			sourceTree = "<group>";
+		};
+		FE35C4C01D10DFE3008F83FD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FE35C4C11D10DFE3008F83FD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FE35C4D71D10EF45008F83FD /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FE35C4D81D10EF45008F83FD /* Essence(精华) */,
+				FE35C4DC1D10EF45008F83FD /* FriendTrend(关注) */,
+				FE35C4E01D10EF45008F83FD /* Main */,
+				FE35C4E41D10EF45008F83FD /* My(个人) */,
+				FE35C4E81D10EF45008F83FD /* New(新帖) */,
+				FE35C4EC1D10EF45008F83FD /* Public(发布) */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		FE35C4D81D10EF45008F83FD /* Essence(精华) */ = {
+			isa = PBXGroup;
+			children = (
+				FE35C4D91D10EF45008F83FD /* Controller */,
+				FE35C4DA1D10EF45008F83FD /* Model */,
+				FE35C4DB1D10EF45008F83FD /* View */,
+			);
+			path = "Essence(精华)";
+			sourceTree = "<group>";
+		};
+		FE35C4D91D10EF45008F83FD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FE35C4F31D110756008F83FD /* ZTFEssenceViewController.h */,
+				FE35C4F41D110756008F83FD /* ZTFEssenceViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FE35C4DA1D10EF45008F83FD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FE35C4DB1D10EF45008F83FD /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FE35C4DC1D10EF45008F83FD /* FriendTrend(关注) */ = {
+			isa = PBXGroup;
+			children = (
+				FE35C4DD1D10EF45008F83FD /* Controller */,
+				FE35C4DE1D10EF45008F83FD /* Model */,
+				FE35C4DF1D10EF45008F83FD /* View */,
+			);
+			path = "FriendTrend(关注)";
+			sourceTree = "<group>";
+		};
+		FE35C4DD1D10EF45008F83FD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FE35C4F61D1107D7008F83FD /* ZTFFriendTrendViewController.h */,
+				FE35C4F71D1107D7008F83FD /* ZTFFriendTrendViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FE35C4DE1D10EF45008F83FD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FE35C4DF1D10EF45008F83FD /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FE35C4E01D10EF45008F83FD /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				FE35C4E11D10EF45008F83FD /* Controller */,
+				FE35C4E21D10EF45008F83FD /* Model */,
+				FE35C4E31D10EF45008F83FD /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		FE35C4E11D10EF45008F83FD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FE35C4ED1D10EF6F008F83FD /* ZTFTabBarViewController.h */,
+				FE35C4EE1D10EF6F008F83FD /* ZTFTabBarViewController.m */,
+				FE35C5021D112AA2008F83FD /* ZTFNaviViewController.h */,
+				FE35C5031D112AA2008F83FD /* ZTFNaviViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FE35C4E21D10EF45008F83FD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FE35C4E31D10EF45008F83FD /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FE35C4E41D10EF45008F83FD /* My(个人) */ = {
+			isa = PBXGroup;
+			children = (
+				FE35C4E51D10EF45008F83FD /* Controller */,
+				FE35C4E61D10EF45008F83FD /* Model */,
+				FE35C4E71D10EF45008F83FD /* View */,
+			);
+			path = "My(个人)";
+			sourceTree = "<group>";
+		};
+		FE35C4E51D10EF45008F83FD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FE35C4F91D1107E6008F83FD /* ZTFMyViewController.h */,
+				FE35C4FA1D1107E6008F83FD /* ZTFMyViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FE35C4E61D10EF45008F83FD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FE35C4E71D10EF45008F83FD /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FE35C4E81D10EF45008F83FD /* New(新帖) */ = {
+			isa = PBXGroup;
+			children = (
+				FE35C4E91D10EF45008F83FD /* Controller */,
+				FE35C4EA1D10EF45008F83FD /* Model */,
+				FE35C4EB1D10EF45008F83FD /* View */,
+			);
+			path = "New(新帖)";
+			sourceTree = "<group>";
+		};
+		FE35C4E91D10EF45008F83FD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FE35C4FC1D1107F0008F83FD /* ZTFNewViewController.h */,
+				FE35C4FD1D1107F0008F83FD /* ZTFNewViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FE35C4EA1D10EF45008F83FD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FE35C4EB1D10EF45008F83FD /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FE35C4EC1D10EF45008F83FD /* Public(发布) */ = {
+			isa = PBXGroup;
+			children = (
+				FE35C4F01D10EFF2008F83FD /* Controller */,
+				FE35C4F11D10EFF2008F83FD /* Model */,
+				FE35C4F21D10EFF2008F83FD /* View */,
+			);
+			path = "Public(发布)";
+			sourceTree = "<group>";
+		};
+		FE35C4F01D10EFF2008F83FD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FE35C4FF1D110803008F83FD /* ZTFPublicViewController.h */,
+				FE35C5001D110803008F83FD /* ZTFPublicViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FE35C4F11D10EFF2008F83FD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FE35C4F21D10EFF2008F83FD /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE35C4BC1D10DFE3008F83FD /* baiSi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE35C4D41D10DFE3008F83FD /* Build configuration list for PBXNativeTarget "baiSi" */;
+			buildPhases = (
+				FE35C4B91D10DFE3008F83FD /* Sources */,
+				FE35C4BA1D10DFE3008F83FD /* Frameworks */,
+				FE35C4BB1D10DFE3008F83FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = baiSi;
+			productName = baiSi;
+			productReference = FE35C4BD1D10DFE3008F83FD /* baiSi.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE35C4B51D10DFE3008F83FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ZTF;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "赵腾飞";
+				TargetAttributes = {
+					FE35C4BC1D10DFE3008F83FD = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = FE35C4B81D10DFE3008F83FD /* Build configuration list for PBXProject "baiSi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FE35C4B41D10DFE3008F83FD;
+			productRefGroup = FE35C4BE1D10DFE3008F83FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE35C4BC1D10DFE3008F83FD /* baiSi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE35C4BB1D10DFE3008F83FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE35C4D01D10DFE3008F83FD /* LaunchScreen.storyboard in Resources */,
+				FE35C4CD1D10DFE3008F83FD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE35C4B91D10DFE3008F83FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE35C4F81D1107D7008F83FD /* ZTFFriendTrendViewController.m in Sources */,
+				FE35C4C51D10DFE3008F83FD /* AppDelegate.m in Sources */,
+				FE35C4C21D10DFE3008F83FD /* main.m in Sources */,
+				FE35C4F51D110756008F83FD /* ZTFEssenceViewController.m in Sources */,
+				FE35C5041D112AA2008F83FD /* ZTFNaviViewController.m in Sources */,
+				FE35C4EF1D10EF6F008F83FD /* ZTFTabBarViewController.m in Sources */,
+				FE35C4FB1D1107E6008F83FD /* ZTFMyViewController.m in Sources */,
+				FE35C5011D110803008F83FD /* ZTFPublicViewController.m in Sources */,
+				FE35C4FE1D1107F0008F83FD /* ZTFNewViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FE35C4CE1D10DFE3008F83FD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE35C4CF1D10DFE3008F83FD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FE35C4D21D10DFE3008F83FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FE35C4D31D10DFE3008F83FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FE35C4D51D10DFE3008F83FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				INFOPLIST_FILE = baiSi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.baiSi";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FE35C4D61D10DFE3008F83FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				INFOPLIST_FILE = baiSi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.baiSi";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE35C4B81D10DFE3008F83FD /* Build configuration list for PBXProject "baiSi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE35C4D21D10DFE3008F83FD /* Debug */,
+				FE35C4D31D10DFE3008F83FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE35C4D41D10DFE3008F83FD /* Build configuration list for PBXNativeTarget "baiSi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE35C4D51D10DFE3008F83FD /* Debug */,
+				FE35C4D61D10DFE3008F83FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FE35C4B51D10DFE3008F83FD /* Project object */;
+}
