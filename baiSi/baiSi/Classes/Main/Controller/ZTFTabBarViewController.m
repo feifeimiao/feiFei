@@ -59,7 +59,7 @@
     ZTFNaviViewController *nvc = [[ZTFNaviViewController alloc]initWithRootViewController:vc];
     
     
-    nvc.tabBarItem.
+    nvc.tabBarItem.title = @"sdf";
 
     [self addChildViewController:nvc];
     
