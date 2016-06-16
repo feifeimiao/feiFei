@@ -14,9 +14,16 @@
 
 @implementation ZTFNaviViewController
 
++(void)load
+{
+    UINavigationBar *nb = [UINavigationBar appearanceWhenContainedInInstancesOfClasses:@[[ZTFNaviViewController class]]];
+    [nb setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
 }
 
 - (void)didReceiveMemoryWarning {

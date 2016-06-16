@@ -24,18 +24,31 @@
 
 @implementation ZTFTabBarViewController
 
++ (void)load
+{
+    UITabBarItem *item = [UITabBarItem appearanceWhenContainedInInstancesOfClasses:@[[ZTFTabBarViewController class]]];
+        NSMutableDictionary *dict = [NSMutableDictionary dictionary];
 
+    dict[NSFontAttributeName] = [UIFont boldSystemFontOfSize:14];
+    
+    [item setTitleTextAttributes:dict forState:UIControlStateNormal];
+    
+    NSMutableDictionary *dic = [NSMutableDictionary dictionary];
+    
+    dic[NSForegroundColorAttributeName] = [UIColor blackColor];
+    
+    [item setTitleTextAttributes:dic forState:UIControlStateSelected];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-
     [self addAllChildViewController];
     
     [self addBut];
-    
 }
 
+//添加tab中间item
 -(void)addBut
 {
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -52,6 +65,7 @@
     
 }
 
+//添加tab所有子控件
 - (void)addAllChildViewController
 {
     ZTFEssenceViewController *es = [[ZTFEssenceViewController alloc]init];
@@ -74,7 +88,7 @@
       [self addOneChildView:my image:[UIImage imageNamed:@"tabBar_me_icon"] selImage:[UIImage imageNamed:@"tabBar_me_click_icon"] name:@"个人"];
     
 }
-
+//  添加一个子控件
 - (void) addOneChildView:(UIViewController *)vc image:(UIImage *)image selImage:(UIImage *)selImage name:(NSString *)name
 {
     ZTFNaviViewController *nvc = [[ZTFNaviViewController alloc]initWithRootViewController:vc];
