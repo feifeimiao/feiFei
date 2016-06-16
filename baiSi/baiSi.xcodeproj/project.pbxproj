@@ -18,6 +18,9 @@
 		FE35C4FE1D1107F0008F83FD /* ZTFNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE35C4FD1D1107F0008F83FD /* ZTFNewViewController.m */; };
 		FE35C5011D110803008F83FD /* ZTFPublicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE35C5001D110803008F83FD /* ZTFPublicViewController.m */; };
 		FE35C5041D112AA2008F83FD /* ZTFNaviViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE35C5031D112AA2008F83FD /* ZTFNaviViewController.m */; };
+		FEDA76C31D124A7B00C0B4D1 /* UIBarButtonItem+item.m in Sources */ = {isa = PBXBuildFile; fileRef = FEDA76C21D124A7B00C0B4D1 /* UIBarButtonItem+item.m */; };
+		FEDA76C91D128BD200C0B4D1 /* ZTFButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FEDA76C81D128BD200C0B4D1 /* ZTFButton.m */; };
+		FEDA76D01D128FC200C0B4D1 /* ZTFSetTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEDA76CF1D128FC200C0B4D1 /* ZTFSetTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +46,12 @@
 		FE35C5021D112AA2008F83FD /* ZTFNaviViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTFNaviViewController.h; sourceTree = "<group>"; };
 		FE35C5031D112AA2008F83FD /* ZTFNaviViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTFNaviViewController.m; sourceTree = "<group>"; };
 		FE35C5111D1184D0008F83FD /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		FEDA76C11D124A7B00C0B4D1 /* UIBarButtonItem+item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+item.h"; sourceTree = "<group>"; };
+		FEDA76C21D124A7B00C0B4D1 /* UIBarButtonItem+item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+item.m"; sourceTree = "<group>"; };
+		FEDA76C71D128BD200C0B4D1 /* ZTFButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTFButton.h; sourceTree = "<group>"; };
+		FEDA76C81D128BD200C0B4D1 /* ZTFButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTFButton.m; sourceTree = "<group>"; };
+		FEDA76CE1D128FC200C0B4D1 /* ZTFSetTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTFSetTableViewController.h; sourceTree = "<group>"; };
+		FEDA76CF1D128FC200C0B4D1 /* ZTFSetTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTFSetTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +100,10 @@
 			isa = PBXGroup;
 			children = (
 				FE35C4C11D10DFE3008F83FD /* main.m */,
+				FEDA76C11D124A7B00C0B4D1 /* UIBarButtonItem+item.h */,
+				FEDA76C21D124A7B00C0B4D1 /* UIBarButtonItem+item.m */,
+				FEDA76C71D128BD200C0B4D1 /* ZTFButton.h */,
+				FEDA76C81D128BD200C0B4D1 /* ZTFButton.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -98,9 +111,10 @@
 		FE35C4D71D10EF45008F83FD /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				FEDA76CA1D128E9800C0B4D1 /* Setting(设置) */,
+				FE35C4E01D10EF45008F83FD /* Main */,
 				FE35C4D81D10EF45008F83FD /* Essence(精华) */,
 				FE35C4DC1D10EF45008F83FD /* FriendTrend(关注) */,
-				FE35C4E01D10EF45008F83FD /* Main */,
 				FE35C4E41D10EF45008F83FD /* My(个人) */,
 				FE35C4E81D10EF45008F83FD /* New(新帖) */,
 				FE35C4EC1D10EF45008F83FD /* Public(发布) */,
@@ -308,6 +322,39 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		FEDA76CA1D128E9800C0B4D1 /* Setting(设置) */ = {
+			isa = PBXGroup;
+			children = (
+				FEDA76CB1D128E9800C0B4D1 /* Controller */,
+				FEDA76CC1D128E9800C0B4D1 /* Model */,
+				FEDA76CD1D128E9800C0B4D1 /* View */,
+			);
+			path = "Setting(设置)";
+			sourceTree = "<group>";
+		};
+		FEDA76CB1D128E9800C0B4D1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FEDA76CE1D128FC200C0B4D1 /* ZTFSetTableViewController.h */,
+				FEDA76CF1D128FC200C0B4D1 /* ZTFSetTableViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FEDA76CC1D128E9800C0B4D1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FEDA76CD1D128E9800C0B4D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -378,9 +425,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEDA76C91D128BD200C0B4D1 /* ZTFButton.m in Sources */,
+				FEDA76D01D128FC200C0B4D1 /* ZTFSetTableViewController.m in Sources */,
 				FE35C4F81D1107D7008F83FD /* ZTFFriendTrendViewController.m in Sources */,
 				FE35C4C51D10DFE3008F83FD /* AppDelegate.m in Sources */,
 				FE35C4C21D10DFE3008F83FD /* main.m in Sources */,
+				FEDA76C31D124A7B00C0B4D1 /* UIBarButtonItem+item.m in Sources */,
 				FE35C4F51D110756008F83FD /* ZTFEssenceViewController.m in Sources */,
 				FE35C5041D112AA2008F83FD /* ZTFNaviViewController.m in Sources */,
 				FE35C4EF1D10EF6F008F83FD /* ZTFTabBarViewController.m in Sources */,

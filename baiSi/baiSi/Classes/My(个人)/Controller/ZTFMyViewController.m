@@ -8,6 +8,8 @@
 
 #import "ZTFMyViewController.h"
 
+#import "ZTFSetTableViewController.h"
+
 @interface ZTFMyViewController ()
 
 @end
@@ -16,16 +18,43 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    
     
     self.view.backgroundColor = [UIColor purpleColor];
+    
+    
+    [self setnb];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)setnb{
+    
+    
+    self.navigationItem.title = @"个人中心";
+    
+    UIBarButtonItem *item0 = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"mine-setting-icon"] highImage:[UIImage imageNamed:@"mine-setting-icon-click"] target:self action:@selector(setting)];
+    
+    UIBarButtonItem *item1 = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"mine-moon-icon"] selImage:[UIImage imageNamed:@"mine-moon-icon-click"] target:self action:@selector(night:)];
+
+    
+    self.navigationItem.rightBarButtonItems = @[item0,item1];
+
+
 }
 
+- (void)night:(UIButton *)but{
+
+    but.selected = !but.selected;
+
+}
+
+- (void)setting{
+    
+    ZTFSetTableViewController *set = [[ZTFSetTableViewController alloc]init];
+    
+    [self.navigationController pushViewController:set animated:YES];
+
+}
 /*
 #pragma mark - Navigation
 

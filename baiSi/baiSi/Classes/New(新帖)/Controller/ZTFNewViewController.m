@@ -19,12 +19,16 @@
     // Do any additional setup after loading the view.
     
     self.view.backgroundColor = [UIColor grayColor];
+    
+    [self setnb];
 
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)setnb{
+
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"MainTagSubIcon"] highImage:[UIImage imageNamed:@"MainTagSubIconClick"] target:self action:nil];
+
+
 }
 
 /*

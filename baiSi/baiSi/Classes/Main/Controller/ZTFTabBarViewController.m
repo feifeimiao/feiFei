@@ -43,6 +43,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.tabBar.backgroundColor = [UIColor whiteColor];
     [self addAllChildViewController];
     
     [self addBut];
@@ -100,8 +101,6 @@
     nvc.tabBarItem.selectedImage = selImage;
     
     [self addChildViewController:nvc];
-    
-    
     
 }
 

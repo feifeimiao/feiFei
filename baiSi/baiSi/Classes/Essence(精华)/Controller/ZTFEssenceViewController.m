@@ -28,24 +28,19 @@
     //导航条中间
     self.navigationItem.titleView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"MainTitle"]];
     //导航条left
-    UIButton *leftBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [leftBtn setImage:[UIImage imageNamed:@"nav_item_game_icon"] forState:UIControlStateNormal];
-    [leftBtn setImage:[UIImage imageNamed:@"nav_item_game_click_icon"] forState:UIControlStateHighlighted];
-    [leftBtn sizeToFit];
-    [leftBtn addTarget:self action:@selector(ClicLeftButten) forControlEvents:UIControlEventTouchUpOutside];
+  self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"nav_item_game_icon"] highImage:[UIImage imageNamed:@"nav_item_game_click_icon"] target:self action:@selector(ClicLeftButten)];
 
-
-    UIView *vi = [[UIView alloc]initWithFrame:leftBtn.bounds];
-    [vi addSubview:leftBtn];
-    
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:vi];
-    
-
+    //right
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"navigationButtonRandom"] highImage:[UIImage imageNamed:@"navigationButtonRandomClick"] target:self action:@selector(ClickRight)];
     
 }
-
+- (void)ClickRight
+{
+    NSLog(@"Right");
+}
 - (void)ClicLeftButten
 {
-    NSLog(@"left");
+    NSLog(@"dsfasd");
 }
+
 @end
