@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import "ZTFADVViewController.h"
+
 #import "ZTFTabBarViewController.h"
 @interface AppDelegate ()
 
@@ -20,14 +22,15 @@
     
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     
-    ZTFTabBarViewController *tb = [[ZTFTabBarViewController alloc]init];
-    
-    self.window.rootViewController = tb;
+//    ZTFTabBarViewController *tb = [[ZTFTabBarViewController alloc]init];
+    ZTFADVViewController *ad = [[ZTFADVViewController alloc]init];
+    self.window.rootViewController = ad;
     
     [self.window makeKeyAndVisible];
     
     return YES;
 }
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

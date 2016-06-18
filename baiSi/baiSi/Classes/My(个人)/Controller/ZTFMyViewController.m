@@ -51,10 +51,11 @@
 - (void)setting{
     
     ZTFSetTableViewController *set = [[ZTFSetTableViewController alloc]init];
-    
+    set.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:set animated:YES];
 
 }
+
 /*
 #pragma mark - Navigation
 
