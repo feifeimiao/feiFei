@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZTFADViewController">
+            <connections>
+                <outlet property="adImageView" destination="Gvb-Tz-Hxs" id="6bm-hJ-nHw"/>
+                <outlet property="adView" destination="x3x-Ek-PQa" id="fjK-Mq-eA2"/>
+                <outlet property="jump" destination="dwv-Ga-EjZ" id="bwx-IO-6zP"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gvb-Tz-Hxs">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x3x-Ek-PQa">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dwv-Ga-EjZ">
+                    <rect key="frame" x="288" y="30" width="57" height="32"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.51864224137931036" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="跳过 (3)"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Gvb-Tz-Hxs" secondAttribute="trailing" id="9Ys-Y3-zAx"/>
+                <constraint firstItem="Gvb-Tz-Hxs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="H8B-Qt-mYB"/>
+                <constraint firstAttribute="bottom" secondItem="Gvb-Tz-Hxs" secondAttribute="bottom" id="URp-5v-4hq"/>
+                <constraint firstItem="Gvb-Tz-Hxs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ZTp-Md-d4C"/>
+                <constraint firstItem="dwv-Ga-EjZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="bbn-gH-HBs"/>
+                <constraint firstAttribute="bottom" secondItem="x3x-Ek-PQa" secondAttribute="bottom" id="bt3-py-nMZ"/>
+                <constraint firstItem="x3x-Ek-PQa" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="nMW-7Z-0bX"/>
+                <constraint firstAttribute="trailing" secondItem="dwv-Ga-EjZ" secondAttribute="trailing" constant="30" id="sOZ-Aa-CJc"/>
+                <constraint firstItem="x3x-Ek-PQa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="tjJ-VN-DtG"/>
+                <constraint firstAttribute="trailing" secondItem="x3x-Ek-PQa" secondAttribute="trailing" id="uJK-Ws-1xa"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+        </view>
+    </objects>
+</document>

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		784C40FB8DE13B19E4EFB936 /* libPods-baiSi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C6B3ABEDADE1604723BC70B /* libPods-baiSi.a */; };
+		FE04AA2C1D156883009F6421 /* ZTFADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE04AA2A1D156883009F6421 /* ZTFADViewController.m */; };
+		FE04AA2D1D156883009F6421 /* ZTFADViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE04AA2B1D156883009F6421 /* ZTFADViewController.xib */; };
+		FE04AA2F1D157CD7009F6421 /* ad.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE04AA2E1D157CD7009F6421 /* ad.plist */; };
 		FE35C4C21D10DFE3008F83FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE35C4C11D10DFE3008F83FD /* main.m */; };
 		FE35C4C51D10DFE3008F83FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE35C4C41D10DFE3008F83FD /* AppDelegate.m */; };
 		FE35C4CD1D10DFE3008F83FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE35C4CC1D10DFE3008F83FD /* Assets.xcassets */; };
@@ -19,8 +22,6 @@
 		FE35C4FE1D1107F0008F83FD /* ZTFNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE35C4FD1D1107F0008F83FD /* ZTFNewViewController.m */; };
 		FE35C5011D110803008F83FD /* ZTFPublicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE35C5001D110803008F83FD /* ZTFPublicViewController.m */; };
 		FE35C5041D112AA2008F83FD /* ZTFNaviViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE35C5031D112AA2008F83FD /* ZTFNaviViewController.m */; };
-		FEAED45B1D1530F1008223B8 /* ZTFADVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEAED4591D1530F1008223B8 /* ZTFADVViewController.m */; };
-		FEAED45C1D1530F1008223B8 /* ZTFADVViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEAED45A1D1530F1008223B8 /* ZTFADVViewController.xib */; };
 		FEAED4641D15608D008223B8 /* LaunchImage-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEAED45D1D15608D008223B8 /* LaunchImage-568h@2x.png */; };
 		FEAED4651D15608D008223B8 /* LaunchImage-700-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEAED45E1D15608D008223B8 /* LaunchImage-700-568h@2x.png */; };
 		FEAED4661D15608D008223B8 /* LaunchImage-700@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEAED45F1D15608D008223B8 /* LaunchImage-700@2x.png */; };
@@ -38,6 +39,10 @@
 		322DD2182502AE4BD9DA9A44 /* Pods-baiSi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-baiSi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-baiSi/Pods-baiSi.debug.xcconfig"; sourceTree = "<group>"; };
 		5C6B3ABEDADE1604723BC70B /* libPods-baiSi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-baiSi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD85CDD3116D4273E103C8FD /* Pods-baiSi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-baiSi.release.xcconfig"; path = "Pods/Target Support Files/Pods-baiSi/Pods-baiSi.release.xcconfig"; sourceTree = "<group>"; };
+		FE04AA291D156883009F6421 /* ZTFADViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTFADViewController.h; sourceTree = "<group>"; };
+		FE04AA2A1D156883009F6421 /* ZTFADViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTFADViewController.m; sourceTree = "<group>"; };
+		FE04AA2B1D156883009F6421 /* ZTFADViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZTFADViewController.xib; sourceTree = "<group>"; };
+		FE04AA2E1D157CD7009F6421 /* ad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ad.plist; path = "Classes/Public(发布)/Model/ad.plist"; sourceTree = "<group>"; };
 		FE35C4BD1D10DFE3008F83FD /* baiSi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = baiSi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE35C4C11D10DFE3008F83FD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FE35C4C31D10DFE3008F83FD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -60,9 +65,6 @@
 		FE35C5021D112AA2008F83FD /* ZTFNaviViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTFNaviViewController.h; sourceTree = "<group>"; };
 		FE35C5031D112AA2008F83FD /* ZTFNaviViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTFNaviViewController.m; sourceTree = "<group>"; };
 		FE35C5111D1184D0008F83FD /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		FEAED4581D1530F1008223B8 /* ZTFADVViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTFADVViewController.h; sourceTree = "<group>"; };
-		FEAED4591D1530F1008223B8 /* ZTFADVViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTFADVViewController.m; sourceTree = "<group>"; };
-		FEAED45A1D1530F1008223B8 /* ZTFADVViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZTFADVViewController.xib; sourceTree = "<group>"; };
 		FEAED45D1D15608D008223B8 /* LaunchImage-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "LaunchImage-568h@2x.png"; path = "Assets.xcassets/Brand Assets.launchimage/LaunchImage-568h@2x.png"; sourceTree = "<group>"; };
 		FEAED45E1D15608D008223B8 /* LaunchImage-700-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "LaunchImage-700-568h@2x.png"; path = "Assets.xcassets/Brand Assets.launchimage/LaunchImage-700-568h@2x.png"; sourceTree = "<group>"; };
 		FEAED45F1D15608D008223B8 /* LaunchImage-700@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "LaunchImage-700@2x.png"; path = "Assets.xcassets/Brand Assets.launchimage/LaunchImage-700@2x.png"; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 			children = (
 				FE35C4D71D10EF45008F83FD /* Classes */,
 				FE35C4C31D10DFE3008F83FD /* AppDelegate.h */,
+				FE04AA2E1D157CD7009F6421 /* ad.plist */,
 				FE35C4C41D10DFE3008F83FD /* AppDelegate.m */,
 				FE35C4CC1D10DFE3008F83FD /* Assets.xcassets */,
 				FE35C4CE1D10DFE3008F83FD /* LaunchScreen.storyboard */,
@@ -391,9 +394,9 @@
 		FEAED4551D153088008223B8 /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				FEAED4581D1530F1008223B8 /* ZTFADVViewController.h */,
-				FEAED4591D1530F1008223B8 /* ZTFADVViewController.m */,
-				FEAED45A1D1530F1008223B8 /* ZTFADVViewController.xib */,
+				FE04AA291D156883009F6421 /* ZTFADViewController.h */,
+				FE04AA2A1D156883009F6421 /* ZTFADViewController.m */,
+				FE04AA2B1D156883009F6421 /* ZTFADViewController.xib */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -512,10 +515,11 @@
 				FE35C4CD1D10DFE3008F83FD /* Assets.xcassets in Resources */,
 				FEAED4661D15608D008223B8 /* LaunchImage-700@2x.png in Resources */,
 				FEAED4681D15608D008223B8 /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
+				FE04AA2D1D156883009F6421 /* ZTFADViewController.xib in Resources */,
 				FEAED4641D15608D008223B8 /* LaunchImage-568h@2x.png in Resources */,
 				FEAED4671D15608D008223B8 /* LaunchImage-800-667h@2x.png in Resources */,
-				FEAED45C1D1530F1008223B8 /* ZTFADVViewController.xib in Resources */,
 				FEAED46A1D15608D008223B8 /* LaunchImage@2x.png in Resources */,
+				FE04AA2F1D157CD7009F6421 /* ad.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,8 +587,8 @@
 				FE35C4F51D110756008F83FD /* ZTFEssenceViewController.m in Sources */,
 				FE35C5041D112AA2008F83FD /* ZTFNaviViewController.m in Sources */,
 				FEAED46D1D15644F008223B8 /* ZTFTableViewCell.m in Sources */,
-				FEAED45B1D1530F1008223B8 /* ZTFADVViewController.m in Sources */,
 				FE35C4EF1D10EF6F008F83FD /* ZTFTabBarViewController.m in Sources */,
+				FE04AA2C1D156883009F6421 /* ZTFADViewController.m in Sources */,
 				FE35C4FB1D1107E6008F83FD /* ZTFMyViewController.m in Sources */,
 				FE35C5011D110803008F83FD /* ZTFPublicViewController.m in Sources */,
 				FE35C4FE1D1107F0008F83FD /* ZTFNewViewController.m in Sources */,

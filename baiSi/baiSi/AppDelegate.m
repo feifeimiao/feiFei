@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 
-#import "ZTFADVViewController.h"
+#import "ZTFADViewController.h"
 
 #import "ZTFTabBarViewController.h"
 @interface AppDelegate ()
@@ -23,7 +23,7 @@
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     
 //    ZTFTabBarViewController *tb = [[ZTFTabBarViewController alloc]init];
-    ZTFADVViewController *ad = [[ZTFADVViewController alloc]init];
+    ZTFADViewController *ad = [[ZTFADViewController alloc]init];
     self.window.rootViewController = ad;
     
     [self.window makeKeyAndVisible];

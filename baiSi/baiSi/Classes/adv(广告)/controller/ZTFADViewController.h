@@ -1,5 +1,5 @@
 //
-//  ZTFADVViewController.h
+//  ZTFADViewController.h
 //  baiSi
 //
 //  Created by feifei on 16/6/18.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ZTFADVViewController : UIViewController
+@interface ZTFADViewController : UIViewController
 
 @end
