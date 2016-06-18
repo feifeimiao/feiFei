@@ -25,11 +25,15 @@
 
     UIImage *image = nil;
     if (iPhone6P) {
-//        image = [UIImage imageNamed:<#(nonnull NSString *)#>];
+        image = [UIImage imageNamed:@"LaunchImage-800-Portrait-736h@3x"];
+    } else if (iPhone6) {
+        image = [UIImage imageNamed:@"LaunchImage-800-667h"];
+    } else if (iPhone5) {
+        image = [UIImage imageNamed:@"LaunchImage-568h"];
+    } else if (iPhone4) {
+        image = [UIImage imageNamed:@"LaunchImage"];
     }
     
- 
-
-
+    _adImageView.image = image;
 }
 @end
