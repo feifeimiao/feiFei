@@ -8,6 +8,8 @@
 
 #import "ZTFNewViewController.h"
 
+#import "ZTFnnnTableViewController.h"
+
 @interface ZTFNewViewController ()
 
 @end
@@ -26,8 +28,18 @@
 
 - (void)setnb{
 
-    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"MainTagSubIcon"] highImage:[UIImage imageNamed:@"MainTagSubIconClick"] target:self action:nil];
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"MainTagSubIcon"] highImage:[UIImage imageNamed:@"MainTagSubIconClick"] target:self action:@selector(subtag)];
 
+
+}
+
+- (void)subtag{
+
+    ZTFnnnTableViewController *nnn = [[ZTFnnnTableViewController alloc]init];
+    
+    nnn.hidesBottomBarWhenPushed = YES;
+    
+    [self.navigationController pushViewController:nnn animated:YES];
 
 }
 

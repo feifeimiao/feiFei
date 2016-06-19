@@ -36,7 +36,7 @@
     
     [self loadAD];
     
-    [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(change) userInfo:nil repeats:YES];
+   _timt =  [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(change) userInfo:nil repeats:YES];
 }
 
 - (IBAction)jumpcl {
@@ -57,6 +57,7 @@
     static int i =3;
     
     i--;
+    
     [_jump setTitle:[NSString stringWithFormat:@"跳过 (%d)",i] forState:UIControlStateNormal];
     
     if (i == -1) {
@@ -65,6 +66,7 @@
         [self jumpcl];
         
     }
+    
 
 }
 

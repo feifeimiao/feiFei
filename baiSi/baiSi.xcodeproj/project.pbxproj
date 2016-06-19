@@ -23,6 +23,7 @@
 		FE35C4FE1D1107F0008F83FD /* ZTFNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE35C4FD1D1107F0008F83FD /* ZTFNewViewController.m */; };
 		FE35C5011D110803008F83FD /* ZTFPublicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE35C5001D110803008F83FD /* ZTFPublicViewController.m */; };
 		FE35C5041D112AA2008F83FD /* ZTFNaviViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE35C5031D112AA2008F83FD /* ZTFNaviViewController.m */; };
+		FE8D7DAC1D16BE9700436CEF /* ZTFSubTagItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8D7DAB1D16BE9700436CEF /* ZTFSubTagItem.m */; };
 		FEAED4641D15608D008223B8 /* LaunchImage-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEAED45D1D15608D008223B8 /* LaunchImage-568h@2x.png */; };
 		FEAED4651D15608D008223B8 /* LaunchImage-700-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEAED45E1D15608D008223B8 /* LaunchImage-700-568h@2x.png */; };
 		FEAED4661D15608D008223B8 /* LaunchImage-700@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEAED45F1D15608D008223B8 /* LaunchImage-700@2x.png */; };
@@ -31,6 +32,9 @@
 		FEAED4691D15608D008223B8 /* LaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = FEAED4621D15608D008223B8 /* LaunchImage.png */; };
 		FEAED46A1D15608D008223B8 /* LaunchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEAED4631D15608D008223B8 /* LaunchImage@2x.png */; };
 		FEAED46D1D15644F008223B8 /* ZTFTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FEAED46C1D15644F008223B8 /* ZTFTableViewCell.m */; };
+		FEB2B6901D16A88300B9EB2D /* ZTFnnnTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB2B68F1D16A88300B9EB2D /* ZTFnnnTableViewController.m */; };
+		FEB2B6991D16AF8500B9EB2D /* ZTFnewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB2B6971D16AF8500B9EB2D /* ZTFnewTableViewCell.m */; };
+		FEB2B69A1D16AF8500B9EB2D /* ZTFnewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEB2B6981D16AF8500B9EB2D /* ZTFnewTableViewCell.xib */; };
 		FEDA76C31D124A7B00C0B4D1 /* UIBarButtonItem+item.m in Sources */ = {isa = PBXBuildFile; fileRef = FEDA76C21D124A7B00C0B4D1 /* UIBarButtonItem+item.m */; };
 		FEDA76C91D128BD200C0B4D1 /* ZTFButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FEDA76C81D128BD200C0B4D1 /* ZTFButton.m */; };
 		FEDA76D01D128FC200C0B4D1 /* ZTFSetTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEDA76CF1D128FC200C0B4D1 /* ZTFSetTableViewController.m */; };
@@ -68,6 +72,8 @@
 		FE35C5021D112AA2008F83FD /* ZTFNaviViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTFNaviViewController.h; sourceTree = "<group>"; };
 		FE35C5031D112AA2008F83FD /* ZTFNaviViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTFNaviViewController.m; sourceTree = "<group>"; };
 		FE35C5111D1184D0008F83FD /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		FE8D7DAA1D16BE9700436CEF /* ZTFSubTagItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTFSubTagItem.h; sourceTree = "<group>"; };
+		FE8D7DAB1D16BE9700436CEF /* ZTFSubTagItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTFSubTagItem.m; sourceTree = "<group>"; };
 		FEAED45D1D15608D008223B8 /* LaunchImage-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "LaunchImage-568h@2x.png"; path = "Assets.xcassets/Brand Assets.launchimage/LaunchImage-568h@2x.png"; sourceTree = "<group>"; };
 		FEAED45E1D15608D008223B8 /* LaunchImage-700-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "LaunchImage-700-568h@2x.png"; path = "Assets.xcassets/Brand Assets.launchimage/LaunchImage-700-568h@2x.png"; sourceTree = "<group>"; };
 		FEAED45F1D15608D008223B8 /* LaunchImage-700@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "LaunchImage-700@2x.png"; path = "Assets.xcassets/Brand Assets.launchimage/LaunchImage-700@2x.png"; sourceTree = "<group>"; };
@@ -77,6 +83,11 @@
 		FEAED4631D15608D008223B8 /* LaunchImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "LaunchImage@2x.png"; path = "Assets.xcassets/Brand Assets.launchimage/LaunchImage@2x.png"; sourceTree = "<group>"; };
 		FEAED46B1D15644F008223B8 /* ZTFTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTFTableViewCell.h; sourceTree = "<group>"; };
 		FEAED46C1D15644F008223B8 /* ZTFTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTFTableViewCell.m; sourceTree = "<group>"; };
+		FEB2B68E1D16A88300B9EB2D /* ZTFnnnTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTFnnnTableViewController.h; sourceTree = "<group>"; };
+		FEB2B68F1D16A88300B9EB2D /* ZTFnnnTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTFnnnTableViewController.m; sourceTree = "<group>"; };
+		FEB2B6961D16AF8500B9EB2D /* ZTFnewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTFnewTableViewCell.h; sourceTree = "<group>"; };
+		FEB2B6971D16AF8500B9EB2D /* ZTFnewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTFnewTableViewCell.m; sourceTree = "<group>"; };
+		FEB2B6981D16AF8500B9EB2D /* ZTFnewTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZTFnewTableViewCell.xib; sourceTree = "<group>"; };
 		FEDA76C11D124A7B00C0B4D1 /* UIBarButtonItem+item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+item.h"; sourceTree = "<group>"; };
 		FEDA76C21D124A7B00C0B4D1 /* UIBarButtonItem+item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+item.m"; sourceTree = "<group>"; };
 		FEDA76C71D128BD200C0B4D1 /* ZTFButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTFButton.h; sourceTree = "<group>"; };
@@ -331,6 +342,8 @@
 			children = (
 				FE35C4FC1D1107F0008F83FD /* ZTFNewViewController.h */,
 				FE35C4FD1D1107F0008F83FD /* ZTFNewViewController.m */,
+				FEB2B68E1D16A88300B9EB2D /* ZTFnnnTableViewController.h */,
+				FEB2B68F1D16A88300B9EB2D /* ZTFnnnTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -338,6 +351,8 @@
 		FE35C4EA1D10EF45008F83FD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FE8D7DAA1D16BE9700436CEF /* ZTFSubTagItem.h */,
+				FE8D7DAB1D16BE9700436CEF /* ZTFSubTagItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -345,6 +360,9 @@
 		FE35C4EB1D10EF45008F83FD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FEB2B6961D16AF8500B9EB2D /* ZTFnewTableViewCell.h */,
+				FEB2B6971D16AF8500B9EB2D /* ZTFnewTableViewCell.m */,
+				FEB2B6981D16AF8500B9EB2D /* ZTFnewTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -523,6 +541,7 @@
 				FE04AA2D1D156883009F6421 /* ZTFADViewController.xib in Resources */,
 				FEAED4641D15608D008223B8 /* LaunchImage-568h@2x.png in Resources */,
 				FEAED4671D15608D008223B8 /* LaunchImage-800-667h@2x.png in Resources */,
+				FEB2B69A1D16AF8500B9EB2D /* ZTFnewTableViewCell.xib in Resources */,
 				FEAED46A1D15608D008223B8 /* LaunchImage@2x.png in Resources */,
 				FE04AA2F1D157CD7009F6421 /* ad.plist in Resources */,
 			);
@@ -584,6 +603,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEDA76C91D128BD200C0B4D1 /* ZTFButton.m in Sources */,
+				FEB2B6991D16AF8500B9EB2D /* ZTFnewTableViewCell.m in Sources */,
 				FEDA76D01D128FC200C0B4D1 /* ZTFSetTableViewController.m in Sources */,
 				FE35C4F81D1107D7008F83FD /* ZTFFriendTrendViewController.m in Sources */,
 				FE35C4C51D10DFE3008F83FD /* AppDelegate.m in Sources */,
@@ -593,7 +613,9 @@
 				FE35C5041D112AA2008F83FD /* ZTFNaviViewController.m in Sources */,
 				FEAED46D1D15644F008223B8 /* ZTFTableViewCell.m in Sources */,
 				FE04AA321D157D6C009F6421 /* ZTFAD.m in Sources */,
+				FE8D7DAC1D16BE9700436CEF /* ZTFSubTagItem.m in Sources */,
 				FE35C4EF1D10EF6F008F83FD /* ZTFTabBarViewController.m in Sources */,
+				FEB2B6901D16A88300B9EB2D /* ZTFnnnTableViewController.m in Sources */,
 				FE04AA2C1D156883009F6421 /* ZTFADViewController.m in Sources */,
 				FE35C4FB1D1107E6008F83FD /* ZTFMyViewController.m in Sources */,
 				FE35C5011D110803008F83FD /* ZTFPublicViewController.m in Sources */,
