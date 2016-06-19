@@ -11,6 +11,7 @@
 		FE04AA2C1D156883009F6421 /* ZTFADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE04AA2A1D156883009F6421 /* ZTFADViewController.m */; };
 		FE04AA2D1D156883009F6421 /* ZTFADViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE04AA2B1D156883009F6421 /* ZTFADViewController.xib */; };
 		FE04AA2F1D157CD7009F6421 /* ad.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE04AA2E1D157CD7009F6421 /* ad.plist */; };
+		FE04AA321D157D6C009F6421 /* ZTFAD.m in Sources */ = {isa = PBXBuildFile; fileRef = FE04AA311D157D6C009F6421 /* ZTFAD.m */; };
 		FE35C4C21D10DFE3008F83FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE35C4C11D10DFE3008F83FD /* main.m */; };
 		FE35C4C51D10DFE3008F83FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE35C4C41D10DFE3008F83FD /* AppDelegate.m */; };
 		FE35C4CD1D10DFE3008F83FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE35C4CC1D10DFE3008F83FD /* Assets.xcassets */; };
@@ -43,6 +44,8 @@
 		FE04AA2A1D156883009F6421 /* ZTFADViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTFADViewController.m; sourceTree = "<group>"; };
 		FE04AA2B1D156883009F6421 /* ZTFADViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZTFADViewController.xib; sourceTree = "<group>"; };
 		FE04AA2E1D157CD7009F6421 /* ad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ad.plist; path = "Classes/Public(发布)/Model/ad.plist"; sourceTree = "<group>"; };
+		FE04AA301D157D6C009F6421 /* ZTFAD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTFAD.h; sourceTree = "<group>"; };
+		FE04AA311D157D6C009F6421 /* ZTFAD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTFAD.m; sourceTree = "<group>"; };
 		FE35C4BD1D10DFE3008F83FD /* baiSi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = baiSi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE35C4C11D10DFE3008F83FD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FE35C4C31D10DFE3008F83FD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -404,6 +407,8 @@
 		FEAED4561D153088008223B8 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				FE04AA301D157D6C009F6421 /* ZTFAD.h */,
+				FE04AA311D157D6C009F6421 /* ZTFAD.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -587,6 +592,7 @@
 				FE35C4F51D110756008F83FD /* ZTFEssenceViewController.m in Sources */,
 				FE35C5041D112AA2008F83FD /* ZTFNaviViewController.m in Sources */,
 				FEAED46D1D15644F008223B8 /* ZTFTableViewCell.m in Sources */,
+				FE04AA321D157D6C009F6421 /* ZTFAD.m in Sources */,
 				FE35C4EF1D10EF6F008F83FD /* ZTFTabBarViewController.m in Sources */,
 				FE04AA2C1D156883009F6421 /* ZTFADViewController.m in Sources */,
 				FE35C4FB1D1107E6008F83FD /* ZTFMyViewController.m in Sources */,

@@ -9,10 +9,20 @@
 #import "ZTFADViewController.h"
 
 #import <AFNetworking/AFNetworking.h>
+
+#import "ZTFTabBarViewController.h"
+
+#import "ZTFAD.h"
+
+#import <UIImageView+WebCache.h>
+
+#import <MJExtension/MJExtension.h>
 @interface ZTFADViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *adImageView;
 @property (weak, nonatomic) IBOutlet UIView *adView;
 @property (weak, nonatomic) IBOutlet UIButton *jump;
+
+@property (weak , nonatomic) NSTimer  *timt;
 
 @end
 
@@ -20,11 +30,42 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
     
     [self setAdimageView];
     
     [self loadAD];
+    
+    [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(change) userInfo:nil repeats:YES];
+}
+
+- (IBAction)jumpcl {
+    
+    
+//    [UIView animateWithDuration:1 animations:^{
+            [UIApplication sharedApplication].keyWindow.rootViewController = [[ZTFTabBarViewController alloc]init];
+        
+//    }];
+
+    [_timt invalidate];
+    
+    
+}
+
+- (void)change
+{
+    static int i =3;
+    
+    i--;
+    [_jump setTitle:[NSString stringWithFormat:@"跳过 (%d)",i] forState:UIControlStateNormal];
+    
+    if (i == -1) {
+        // 广告界面结束
+        
+        [self jumpcl];
+        
+    }
+
 }
 
 //获取广告数据
@@ -40,9 +81,29 @@
     parameters[@"code2"] = ZTFCode2;
     
     [mgr GET:@"http://mobads.baidu.com/cpro/ui/mads.php" parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary * _Nullable responseObject) {
+//
+        //将写好的plist文件 转模型
+        NSDictionary *dic = [responseObject[@"ad"] firstObject];
         
-        NSLog(@"%@",responseObject);
-        [responseObject writeToFile:@"/Users/zhao/Desktop/ad.plist" atomically:YES];
+        ZTFAD *ad = [ZTFAD mj_objectWithKeyValues:dic];
+        
+        UIImageView *adView = [[UIImageView alloc] init];
+        [self.adView addSubview:adView];
+        
+        CGFloat h = ZTFScreenW / ad.w * ad.h;
+        
+        if (h > ZTFScreenH * 0.8) {
+            h = ZTFScreenH * 0.8;
+        }
+        
+        adView.frame = CGRectMake(0, 0, ZTFScreenW, h);
+        
+        // 加载图片
+        [adView sd_setImageWithURL:[NSURL URLWithString:ad.w_picurl]];
+        
+
+//        NSLog(@"%@",responseObject);
+//        [responseObject writeToFile:@"/Users/zhao/Desktop/ad.plist" atomically:YES];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
         NSLog(@"%@",error);
