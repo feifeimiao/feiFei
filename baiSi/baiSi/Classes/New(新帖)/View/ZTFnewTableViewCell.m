@@ -10,6 +10,8 @@
 #import <UIImageView+WebCache.h>
 #import "ZTFSubTagItem.h"
 
+#import "UIImage+image.h"
+
 @interface ZTFnewTableViewCell ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *Himage;
@@ -37,8 +39,17 @@
 - (void)setSubTagItem:(ZTFSubTagItem *)subTagItem
 {
     _subTagItem = subTagItem;
-    
-    [_Himage sd_setImageWithURL:[NSURL URLWithString:subTagItem.image_list]];
+//         [UIImage imageWithBorderW:0 borderColor:nil image:_Himage.image];
+//    [_Himage sd_setImageWithURL:[NSURL URLWithString:subTagItem.image_list]];
+    [_Himage sd_setImageWithURL:[NSURL URLWithString:subTagItem.image_list] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+        
+      image =  [UIImage imageWithBorderW:0 borderColor:nil image:_Himage.image];
+        
+        _Himage.image = image;
+        
+    }];
+
+                     
     _num.text = subTagItem.sub_number;
     
     _name.text = subTagItem.theme_name;

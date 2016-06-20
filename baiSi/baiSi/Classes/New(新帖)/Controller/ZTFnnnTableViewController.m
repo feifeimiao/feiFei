@@ -79,6 +79,8 @@ static NSString *ID = @"cell1";
     
     cell.subTagItem = _arr[indexPath.row];
     
+//         [UIImage imageWithBorderW:0 borderColor:nil image:_Himage.image];
+    
     return cell;
 
     

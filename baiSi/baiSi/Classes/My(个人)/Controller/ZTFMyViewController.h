@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ZTFMyViewController : UIViewController
+@interface ZTFMyViewController : UITableViewController
 
 @end

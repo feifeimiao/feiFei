@@ -18,17 +18,20 @@ PODS:
   - SDWebImage (3.7.6):
     - SDWebImage/Core (= 3.7.6)
   - SDWebImage/Core (3.7.6)
+  - UIView+AutoLayout (2.0.1)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
   - MJExtension (~> 3.0.10)
   - SDWebImage (~> 3.7.6)
+  - UIView+AutoLayout
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   MJExtension: d86aacb740c87519d20e3cca55b6fa4be6cc7548
   SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
+  UIView+AutoLayout: 9eb76d5e72974e5b96c0350624d8f17ddb405ee0
 
-PODFILE CHECKSUM: 50d5519a84cbb53ea2b71fc66e8b415ad1fcc4aa
+PODFILE CHECKSUM: 56cafb04efe9e549d2400ec81a33139439a1e103
 
 COCOAPODS: 1.0.1

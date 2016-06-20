@@ -8,6 +8,8 @@
 
 #import "ZTFFriendTrendViewController.h"
 
+#import "ZTFLoginViewController.h"
+
 @interface ZTFFriendTrendViewController ()
 
 @end
@@ -18,9 +20,15 @@
     [super viewDidLoad];
 
     
-    self.view.backgroundColor = [UIColor orangeColor];
+    self.view.backgroundColor = [UIColor lightGrayColor];
 
     [self setnaB];
+    
+}
+- (IBAction)modaLogin:(id)sender {
+    ZTFLoginViewController *log = [[ZTFLoginViewController alloc]init];
+    
+    [self presentViewController:log animated:YES completion:nil];
     
 }
 

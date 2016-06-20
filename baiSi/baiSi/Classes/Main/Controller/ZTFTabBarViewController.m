@@ -86,8 +86,12 @@
     ZTFFriendTrendViewController *frind = [[ZTFFriendTrendViewController alloc]init];
     [self addOneChildView:frind image:[UIImage imageNamed:@"tabBar_friendTrends_icon"] selImage:[UIImage imageNamed:@"tabBar_friendTrends_click_icon"] name:@"关注"];
     
-    ZTFMyViewController *my = [[ZTFMyViewController alloc]init];
-      [self addOneChildView:my image:[UIImage imageNamed:@"tabBar_me_icon"] selImage:[UIImage imageNamed:@"tabBar_me_click_icon"] name:@"个人"];
+    // 我
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"ZTFMyViewController" bundle:nil];
+    // 加载箭头指向的控制器
+    ZTFMyViewController *meVc = [storyboard instantiateInitialViewController];
+
+      [self addOneChildView:meVc image:[UIImage imageNamed:@"tabBar_me_icon"] selImage:[UIImage imageNamed:@"tabBar_me_click_icon"] name:@"个人"];
     
 }
 //  添加一个子控件

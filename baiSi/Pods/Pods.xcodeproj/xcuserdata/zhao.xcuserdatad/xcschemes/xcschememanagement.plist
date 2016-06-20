@@ -24,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>UIView+AutoLayout.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -37,12 +42,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A2BA59DBBC0F2B45AE0BF2AB28FE68F6</key>
+		<key>D38487203D1FC0AA0D190C81D079BA5E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EE46D8B4D7ECA1D45F7C1E584902B386</key>
+		<key>F8B12153D0F0CB29BAED95375EE85BDB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FD309C7FA58A5CA77A1CF2015B5AFC79</key>
 		<dict>
 			<key>primary</key>
 			<true/>
