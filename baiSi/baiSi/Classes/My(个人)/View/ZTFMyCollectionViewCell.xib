@@ -29,7 +29,7 @@
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
-            <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="nMo-FY-Q95" secondAttribute="bottom" constant="10" id="7im-8n-cVw"/>
                 <constraint firstItem="nMo-FY-Q95" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="c0o-9w-mTE"/>
@@ -38,6 +38,10 @@
                 <constraint firstItem="nMo-FY-Q95" firstAttribute="top" secondItem="NtX-1B-h5N" secondAttribute="bottom" constant="5" id="rb5-tN-8br"/>
             </constraints>
             <size key="customSize" width="112" height="108"/>
+            <connections>
+                <outlet property="icon" destination="NtX-1B-h5N" id="9M5-dg-AuG"/>
+                <outlet property="name" destination="nMo-FY-Q95" id="fO2-o0-xau"/>
+            </connections>
             <point key="canvasLocation" x="255" y="269"/>
         </collectionViewCell>
     </objects>

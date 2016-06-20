@@ -42,6 +42,7 @@
 		FEB21CE91D17F6FD002AE778 /* ZTFMyViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEB21CE81D17F6FD002AE778 /* ZTFMyViewController.storyboard */; };
 		FEB21CED1D17FFA3002AE778 /* ZTFMyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB21CEB1D17FFA3002AE778 /* ZTFMyCollectionViewCell.m */; };
 		FEB21CEE1D17FFA3002AE778 /* ZTFMyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEB21CEC1D17FFA3002AE778 /* ZTFMyCollectionViewCell.xib */; };
+		FEB21CF11D181791002AE778 /* ZTFMyItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB21CF01D181791002AE778 /* ZTFMyItem.m */; };
 		FEB2B6901D16A88300B9EB2D /* ZTFnnnTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB2B68F1D16A88300B9EB2D /* ZTFnnnTableViewController.m */; };
 		FEB2B6991D16AF8500B9EB2D /* ZTFnewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB2B6971D16AF8500B9EB2D /* ZTFnewTableViewCell.m */; };
 		FEB2B69A1D16AF8500B9EB2D /* ZTFnewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEB2B6981D16AF8500B9EB2D /* ZTFnewTableViewCell.xib */; };
@@ -108,6 +109,8 @@
 		FEB21CEA1D17FFA3002AE778 /* ZTFMyCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTFMyCollectionViewCell.h; sourceTree = "<group>"; };
 		FEB21CEB1D17FFA3002AE778 /* ZTFMyCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTFMyCollectionViewCell.m; sourceTree = "<group>"; };
 		FEB21CEC1D17FFA3002AE778 /* ZTFMyCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZTFMyCollectionViewCell.xib; sourceTree = "<group>"; };
+		FEB21CEF1D181791002AE778 /* ZTFMyItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTFMyItem.h; sourceTree = "<group>"; };
+		FEB21CF01D181791002AE778 /* ZTFMyItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTFMyItem.m; sourceTree = "<group>"; };
 		FEB2B68E1D16A88300B9EB2D /* ZTFnnnTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTFnnnTableViewController.h; sourceTree = "<group>"; };
 		FEB2B68F1D16A88300B9EB2D /* ZTFnnnTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTFnnnTableViewController.m; sourceTree = "<group>"; };
 		FEB2B6961D16AF8500B9EB2D /* ZTFnewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTFnewTableViewCell.h; sourceTree = "<group>"; };
@@ -353,6 +356,8 @@
 		FE35C4E61D10EF45008F83FD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FEB21CEF1D181791002AE778 /* ZTFMyItem.h */,
+				FEB21CF01D181791002AE778 /* ZTFMyItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -662,6 +667,7 @@
 				FEAED46D1D15644F008223B8 /* ZTFTableViewCell.m in Sources */,
 				FE04AA321D157D6C009F6421 /* ZTFAD.m in Sources */,
 				FE8D7DAC1D16BE9700436CEF /* ZTFSubTagItem.m in Sources */,
+				FEB21CF11D181791002AE778 /* ZTFMyItem.m in Sources */,
 				FE35C4EF1D10EF6F008F83FD /* ZTFTabBarViewController.m in Sources */,
 				FE65BA1D1D1787F400701DE2 /* ZTFLoginViewController.m in Sources */,
 				FE65BA211D1793F800701DE2 /* ZTFLoginReView.m in Sources */,

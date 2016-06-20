@@ -30,12 +30,13 @@
     [super awakeFromNib];
     // Initialization code
 }
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
+- (void)setFrame:(CGRect)frame
+{
+    frame.size.width -= 20;
+    frame.origin.x += 10;
     
-    // Configure the view for the selected state
+    [super setFrame:frame];
 }
-
 - (void)setSubTagItem:(ZTFSubTagItem *)subTagItem
 {
     _subTagItem = subTagItem;

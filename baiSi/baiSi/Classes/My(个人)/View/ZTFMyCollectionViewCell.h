@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class ZTFMyItem;
 @interface ZTFMyCollectionViewCell : UICollectionViewCell
 
+@property (strong , nonatomic) ZTFMyItem *myItem;
 @end
