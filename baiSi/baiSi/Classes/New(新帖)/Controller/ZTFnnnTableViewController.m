@@ -31,7 +31,7 @@ static NSString *ID = @"cell1";
     
     self.title = @"sdfs";
     
-    self.tableView.backgroundColor = [UIColor redColor];
+    self.tableView.backgroundColor = [UIColor lightGrayColor];
     
     [self.tableView registerNib:[UINib nibWithNibName:@"ZTFnewTableViewCell" bundle:nil] forCellReuseIdentifier:ID];
     

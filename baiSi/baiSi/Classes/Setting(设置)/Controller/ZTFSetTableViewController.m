@@ -8,6 +8,7 @@
 
 #import "ZTFSetTableViewController.h"
 
+static NSString *const  ID = @"cell";
 @interface ZTFSetTableViewController ()
 
 @end
@@ -18,33 +19,31 @@
     
     [super viewDidLoad];
     
+    self.tableView.tableFooterView = [[UIView alloc]init];
     
 
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:ID];
+    
 }
 
 
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-
-    return 0;
-}
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
-    return 0;
+    return 1;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID forIndexPath:indexPath];
     
-    // Configure the cell...
-    
+    cell.textLabel.text = @"hell";
+   
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.

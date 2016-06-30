@@ -61,7 +61,7 @@
     
     UIView *vie = _loView.subviews[0];
     
-    vie.frame = CGRectMake(0, 0, _loView.width*0.5, _loView.heigth);
+    vie.frame = CGRectMake(0,  0, _loView.width*0.5, _loView.heigth);
     
     UIView *vie2 = _loView.subviews[1];
     
@@ -75,14 +75,5 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

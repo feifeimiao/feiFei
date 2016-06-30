@@ -12,5 +12,5 @@
 
 @property (strong , nonatomic) NSString *name;
 @property (strong , nonatomic) NSString *icon;
-
+@property (strong , nonatomic) NSString *url;
 @end

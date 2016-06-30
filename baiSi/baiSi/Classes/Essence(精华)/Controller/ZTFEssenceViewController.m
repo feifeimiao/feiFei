@@ -7,22 +7,21 @@
 //
 
 #import "ZTFEssenceViewController.h"
-
-@interface ZTFEssenceViewController ()
-
+@interface ZTFEssenceViewController()
 @end
 
 @implementation ZTFEssenceViewController
 
-- (void)viewDidLoad {
+
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-  
+    
     [self setNB];
     
-    self.view.backgroundColor = [UIColor redColor];
     
 }
-
+#pragma mark - 设置导航条
 -(void)setNB{
 
     //导航条中间
@@ -34,6 +33,8 @@
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"navigationButtonRandom"] highImage:[UIImage imageNamed:@"navigationButtonRandomClick"] target:self action:@selector(ClickRight)];
     
 }
+
+
 - (void)ClickRight
 {
     NSLog(@"Right");

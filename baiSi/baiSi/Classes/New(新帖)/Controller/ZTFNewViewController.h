@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ZTFBViewController.h"
 
-@interface ZTFNewViewController : UIViewController
+@interface ZTFNewViewController : ZTFBViewController
 
 @end

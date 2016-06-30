@@ -9,6 +9,7 @@
 
 #ifdef __OBJC__
 
+#define ZTFBaseUrl @"http://api.budejie.com/api/api_open.php"
 #define ZTFScreenW [UIScreen mainScreen].bounds.size.width
 #define ZTFScreenH [UIScreen mainScreen].bounds.size.height
 #define iPhone6P ([UIScreen mainScreen].bounds.size.height == 736)

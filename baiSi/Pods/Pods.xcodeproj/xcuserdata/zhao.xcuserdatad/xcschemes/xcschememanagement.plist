@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>DACircularProgress.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MJExtension.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -24,6 +29,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SVProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>UIView+AutoLayout.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,7 +42,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>15952DBD8EDD1DBC099E1A1D4A9BE774</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>928353533005A4198EBDA5B700D37B64</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9775596B3CA16905FC8F66DA8E2A3C67</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -42,17 +62,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D38487203D1FC0AA0D190C81D079BA5E</key>
+		<key>B688371182A7CA29916D36F6F1DF1B35</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F8B12153D0F0CB29BAED95375EE85BDB</key>
+		<key>DA1E51C2D3077CAE42E3024B45583BB4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FD309C7FA58A5CA77A1CF2015B5AFC79</key>
+		<key>F20732675AF04484439E27AC02A95AA3</key>
 		<dict>
 			<key>primary</key>
 			<true/>

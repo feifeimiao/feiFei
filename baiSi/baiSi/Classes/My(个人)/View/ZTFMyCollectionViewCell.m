@@ -18,13 +18,19 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *name;
 
+//@property (strong , nonatomic) NSURL *url;
+
 @end
 
 @implementation ZTFMyCollectionViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    // Initialization code
+    // Initialization coder
+    
+//    self.selectedBackgroundView.exclusiveTouch = YES;
+    
+    
 }
 
 - (void)setMyItem:(ZTFMyItem *)myItem
@@ -32,6 +38,8 @@
     _myItem = myItem;
     
     _name.text = myItem.name;
+    
+    
     [_icon sd_setImageWithURL:[NSURL URLWithString:myItem.icon]];
 }
 

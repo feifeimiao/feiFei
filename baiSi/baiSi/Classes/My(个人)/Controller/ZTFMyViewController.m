@@ -20,10 +20,12 @@
 
 #import "UIView+Frame.h"
 
+#import <SafariServices/SafariServices.h>
+
 CGFloat margin = 1;
 NSInteger cols = 4;
 #define itemWH (ZTFScreenW - (cols - 1) * margin) / cols
-@interface ZTFMyViewController ()<UICollectionViewDataSource>
+@interface ZTFMyViewController ()<UICollectionViewDataSource,UICollectionViewDelegate>
 
 @property (weak , nonatomic) UICollectionView *collection;
 
@@ -31,29 +33,27 @@ NSInteger cols = 4;
 
 @end
 
-
-
 @implementation ZTFMyViewController
     static NSString *ID = @"cell";
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
 
     self.view.backgroundColor = [UIColor purpleColor];
     
     [self setnb];
     
-  
-    
     [self footerView];
-      [self data];
+    
+    [self data];
     
     self.tableView.sectionFooterHeight = 10;
     self.tableView.sectionHeaderHeight = 0;
     // 设置顶部额外滚动区域-25
     self.tableView.contentInset = UIEdgeInsetsMake(-25, 0, 0, 0);
 }
-
+#pragma mark - 请求数据
 - (void)data{
 
     //请求
@@ -64,30 +64,42 @@ NSInteger cols = 4;
     parameters[@"c"] = @"topic";
     
     //实现
-    [manager GET:@"http://api.budejie.com/api/api_open.php" parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary*  _Nullable responseObject) {
-//        [responseObject writeToFile:@"/Users/zhao/Desktop/re.plist" atomically:YES encoding:0 error:nil];
-//        _arr = []
-//        [responseObject writeToFile:@"/Users/zhao/Desktop/re.plist" atomically:YES];
-        _arr = [ZTFMyItem mj_objectArrayWithKeyValuesArray:responseObject[@"square_list"]];
+   
+        [manager GET:@"http://api.budejie.com/api/api_open.php" parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary*  _Nullable responseObject) {
+            //        [responseObject writeToFile:@"/Users/zhao/Desktop/re.plist" atomically:YES encoding:0 error:nil];
+            
+            //        [responseObject writeToFile:@"/Users/zhao/Desktop/re.plist" atomically:YES];
+            _arr = [ZTFMyItem mj_objectArrayWithKeyValuesArray:responseObject[@"square_list"]];
+            
+            
+            
+           
+            
+         
+                              NSInteger  cout = _arr.count;
+            
+            NSInteger rows = (cout-1) / cols + 1;
+            
+            CGFloat h = rows * itemWH + (rows -1) * margin;
+            
+            _collection.heigth = h;
+
+                              self.tableView.tableFooterView = _collection;
+                   
         
-        NSInteger  cout = _arr.count;
-        
-        NSInteger rows = (cout-1) / cols + 1;
-        
-        CGFloat h = rows * itemWH + (rows -1) * margin;
-        
-        _collection.heigth = h;
-        
-        self.tableView.tableFooterView = _collection;
-        
-        
-        
-        [_collection reloadData];
-        
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
-    }];
+
+         
+            [_collection reloadData];
+            
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+            
+        }];
+
 }
+
+
+
+#pragma mark - UICollectionView
 - (void)footerView{
 
     //流水布局
@@ -107,6 +119,8 @@ NSInteger cols = 4;
         
     collection.backgroundColor = [UIColor purpleColor];
     collection.dataSource = self;
+        
+        collection.delegate = self;
     [collection registerNib:[UINib nibWithNibName:@"ZTFMyCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:ID];
 //        collection.canCancelContentTouches = YES;
         collection;
@@ -114,10 +128,12 @@ NSInteger cols = 4;
     
     _collection = collection;
     
+//    collection.touc
     self.tableView.tableFooterView = collection;
-    
 
 }
+
+#pragma mark - UICollectionViewDataSource
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
 
     NSLog(@"%zd",_arr.count);
@@ -130,14 +146,26 @@ NSInteger cols = 4;
     ZTFMyCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:ID forIndexPath:indexPath];
 
     cell.myItem = _arr[indexPath.row];
-//    cell.backgroundColor = [UIColor greenColor];
+
+    
     
     return cell;
 }
 
+#pragma mark - UICollectionViewDelegate
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
 
+    ZTFMyItem *my = _arr[indexPath.row];
+        if (![my.url hasPrefix:@"http"]) return;
+    NSURL *url = [NSURL URLWithString:my.url];
+    
+    SFSafariViewController *sf = [[SFSafariViewController alloc]initWithURL:url];
 
+    [self presentViewController:sf animated:YES completion:nil];
+    
+}
 
+#pragma mark - 设置顶部导航条
 - (void)setnb{
     
     self.navigationItem.title = @"个人中心";
@@ -150,16 +178,19 @@ NSInteger cols = 4;
 
 
 }
+#pragma mark - 夜间模式
 - (void)night:(UIButton *)but{
 
     but.selected = !but.selected;
 
 }
+#pragma mark - 跳转设置界面
 - (void)setting{
     
     ZTFSetTableViewController *set = [[ZTFSetTableViewController alloc]init];
     set.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:set animated:YES];
+
 
 }
 
